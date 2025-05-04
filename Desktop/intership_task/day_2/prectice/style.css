@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial,sans-serif;
+  background-color: #f0f0f0;
+  margin-top: 70px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.main{
+  display: flex;
+  background-color: rgb(202, 160, 108);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 65vw;
+}
+.side{
+  flex: 1.5;
+  padding: 20px;
+  text-align: left;
+  width:347px;
+}
+.side>img{
+  width: 150px;
+  height: 150px;
+  /* margin-left: 25px; */
+  border-radius: 50%;
+  object-fit: cover;
+}
+.side>h2{
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+.side>p{
+  font-size: 14px;
+  color: #281717;
+  font-weight:bold;
+}
+.side button{
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: rgb(235, 146, 164);
+  border-radius: 10px;
+}
+.side button a{
+  text-decoration: none;
+  font-size: medium;
+  color:white;
+}
+
+.side #res{
+  font-size: 12px;
+  margin-top: 20px;
+}
+.Discription{
+  flex: 2.2;
+  padding: 20px;
+  /* border-radius: 10px; */
+  color: rgb(249, 247, 242);
+  background: rgb(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+ 
+
+}
+.Discription h1{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.Discription p{
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.Discription > .foottext{
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    width: 90vw;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .side {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .side > img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .side > h2 {
+    font-size: 20px;
+  }
+
+  .side button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .Discription h1 {
+    font-size: 24px;
+  }
+
+  .Discription p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    width: 100vw;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .side > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .side > h2 {
+    font-size: 18px;
+  }
+
+  .side > p {
+    font-size: 12px;
+    /* text-wrap:inherit; */
+    word-wrap: break-word;
+  }
+
+  .side button {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  .Discription h1 {
+    font-size: 20px;
+  }
+
+  .Discription p {
+    font-size: 12px;
+  }
+
+  .Discription > .foottext {
+    margin-top: 20px;
+  }
+}
