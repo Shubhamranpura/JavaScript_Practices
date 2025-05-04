@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Loop and Callback Queue</title>
+  <script src="eventloop.js"></script>
+</head>
+
+<body style="font-family: cursive;">
+  <h1>Event Loop and Callback Queue</h1>
+  <p>JavaScript is known for its ability to handle asynchronous tasks efficiently, even though it is single-threaded.
+    This article will help you understand what it means for JavaScript to be single-threaded, how the event loop works,
+    and how JavaScript manages to keep your applications responsive.
+
+  <h1>What does it mean when we say JavaScript is single-threaded?</h1>
+  When we say that JavaScript is single-threaded, it means that JavaScript executes code one line at a time, in a
+  sequence. The main thread, where all JavaScript code runs, can only do one task at a time, and there is no way to
+  run multiple pieces of code in parallel on this thread. This might sound limiting, but JavaScript’s design is
+  well-suited for handling many tasks efficiently, thanks to the event loop.</p>
+  <p>
+   <h1> How do Event loops work?</h1>
+    <p>Call Stack:
+    JavaScript uses a call stack to keep track of the currently executing function (where the program is in its
+    execution).
+    </p>
+    <p>Callback Queue:
+    Asynchronous operations, such as I/O operations or timers, are handled by the browser or Node.js runtime. When these
+    operations are complete, corresponding functions (callbacks) are placed in the callback queue.</p>
+    <p>Event Loop:
+    The event loop continuously checks the call stack and the callback queue. If the call stack is empty, it takes the
+    first function from the callback queue and pushes it onto the call stack for execution.</p>
+    <p>Execution:
+    The function on top of the call stack is executed. If this function contains asynchronous code, it might initiate
+    further asynchronous operations.</p>
+    <p>Callback Execution:
+    When an asynchronous operation is complete, its callback is placed in the callback queue.</p>
+    <p>Repeat:
+    The event loop continues this process, ensuring that the call stack is always empty before taking the next function
+    from the callback queue.</p>
+  </p>
+</body>
+
+</html>
