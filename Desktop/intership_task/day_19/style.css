@@ -1,0 +1,89 @@
+
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .todo-container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .todo-input-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .todo-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .add-btn {
+            background-color: #6c63ff;
+            color: #000000;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: ease-in-out 0.3s;
+        }
+
+        .add-btn:hover {
+            background-color: #489893;
+        }
+
+        .todo-list {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #f9f9f9;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        .todo-item.completed {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+
+        .action-buttons button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .complete-btn {
+            color: #28a745;
+        }
+
+        .delete-btn {
+            color: #dc3545;
+        }
